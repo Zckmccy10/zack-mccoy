@@ -14,7 +14,7 @@ export default function Home() {
         <div className="flex flex-wrap gap-8">
           <TechCard title="Next.js" image="nextjs" />
           <TechCard title="Supabase" image="supabase" />
-          <TechCard title="Zustand" image="zustand" />
+          <TechCard title="Zustand" image="programming" />
           <TechCard title="Chakra UI" image="chakraui" />
         </div>
         <p className="text-md lg:text-lg">

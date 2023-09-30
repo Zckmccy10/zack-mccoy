@@ -50,7 +50,7 @@ const Projects = () => {
             },
             {
               name: "Zustand",
-              url: "zustand",
+              url: "programming",
             },
             {
               name: "Mantine UI",
