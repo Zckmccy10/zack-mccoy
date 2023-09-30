@@ -5,12 +5,16 @@ import PictureCarousel from "../components/PictureCarousel";
 
 export default function Home() {
   return (
-    <div className="container mx-auto pt-8 grid grid-cols-1 lg:grid-cols-[3fr_1fr] lg:divide-x divide-y lg:divide-y-0  gap-4">
+    <div className="container mx-auto pt-8 gap-4">
       <div className="flex flex-col gap-4 px-8 lg:px-4">
         <BackButton />
         <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
           Project: Fantasy Football League Magazine
         </h2>
+        <div className="flex flex-wrap gap-8">
+          <TechCard title="Canva" image="canva" />
+          <TechCard title="Photoshop" image="photoshop" />
+        </div>
         <p className="text-md lg:text-lg">
           Got an itch to try and design something, so I decided to see if I
           could make a decent magazine. Fantasy football seems to be my usual
@@ -57,11 +61,6 @@ export default function Home() {
           ]}
           landscape="portrait"
         />
-      </div>
-      <div className="flex flex-col items-center gap-2 px-4 mb-6 pt-8 mt-8 lg:pt-0 lg:mt-0">
-        <h5 className="w-full font-bold opacity-80">Tech:</h5>
-        <TechCard title="Canva" image="canva" />
-        <TechCard title="Photoshop" image="photoshop" />
       </div>
     </div>
   );

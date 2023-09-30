@@ -5,12 +5,18 @@ import PictureCarousel from "../components/PictureCarousel";
 
 export default function Home() {
   return (
-    <div className="container mx-auto pt-8 grid grid-cols-1 lg:grid-cols-[3fr_1fr] lg:divide-x divide-y lg:divide-y-0  gap-4">
+    <div className="container mx-auto pt-8 gap-4">
       <div className="flex flex-col gap-4 px-8 lg:px-4">
         <BackButton />
         <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
           Project: Salary Cap Auction
         </h2>
+        <div className="flex flex-wrap gap-8">
+          <TechCard title="Next.js" image="nextjs" />
+          <TechCard title="Supabase" image="supabase" />
+          <TechCard title="Zustand" image="zustand" />
+          <TechCard title="Chakra UI" image="chakraui" />
+        </div>
         <p className="text-md lg:text-lg">
           Designed and developed by me, this project was created during COVID
           (2020) as an alternative for my fantasy football league&apos;s normal
@@ -39,13 +45,10 @@ export default function Home() {
           ]}
         />
       </div>
-      <div className="flex flex-col items-center gap-2 px-4 mb-6 pt-8 mt-8 lg:pt-0 lg:mt-0">
-        <h5 className="w-full font-bold opacity-80">Current Tech:</h5>
-        <TechCard title="Next.js" image="nextjs" />
-        <TechCard title="Supabase" image="supabase" />
-        <TechCard title="Zustand" image="zustand" />
-        <TechCard title="Chakra UI" image="chakraui" />
-        <h5 className="w-full mt-10 font-bold opacity-80">Previous Tech:</h5>
+      <h5 className="w-full my-10 font-bold opacity-80">
+        Tech Used In Previous Iterations:
+      </h5>
+      <div className="flex flex-wrap gap-8">
         <TechCard title="HTML" image="html" />
         <TechCard title="CSS" image="css" />
         <TechCard title="Javascript" image="javascript" />

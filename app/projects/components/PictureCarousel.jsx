@@ -5,7 +5,7 @@ const PictureCarousel = ({ images, landscape }) => {
   return (
     <Carousel
       className={`w-[100%] lg:w-[80%] ${
-        landscape === "portrait" && "max-w-[500px]"
+        landscape === "portrait" && "max-w-[600px]"
       } mx-auto my-10`}
     >
       {images &&

@@ -5,12 +5,18 @@ import PictureCarousel from "../components/PictureCarousel";
 
 export default function Home() {
   return (
-    <div className="container mx-auto pt-8 grid grid-cols-1 lg:grid-cols-[3fr_1fr] lg:divide-x divide-y lg:divide-y-0  gap-4">
+    <div className="container mx-auto pt-8 gap-4">
       <div className="flex flex-col gap-4 px-8 lg:px-4">
         <BackButton />
         <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
           Project: Fantasy Football League Record
         </h2>
+        <div className="flex flex-wrap gap-8">
+          <TechCard title="Next.js" image="nextjs" />
+          <TechCard title="Supabase" image="supabase" />
+          <TechCard title="Redux" image="redux" />
+          <TechCard title="Chakra UI" image="chakraui" />
+        </div>
         <p className="text-md lg:text-lg">
           Developed as a site to track historical data for a fantasy football
           league that has been running since 1994! This site has an entire admin
@@ -36,13 +42,6 @@ export default function Home() {
             "/images/mffl/recaps-bottom.png",
           ]}
         />
-      </div>
-      <div className="flex flex-col items-center gap-2 px-4 mb-6 pt-8 mt-8 lg:pt-0 lg:mt-0">
-        <h5 className="w-full font-bold opacity-80">Tech:</h5>
-        <TechCard title="Next.js" image="nextjs" />
-        <TechCard title="Supabase" image="supabase" />
-        <TechCard title="Redux" image="redux" />
-        <TechCard title="Chakra UI" image="chakraui" />
       </div>
     </div>
   );
