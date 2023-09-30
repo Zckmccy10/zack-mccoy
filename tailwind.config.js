@@ -20,9 +20,6 @@ module.exports = {
         brand: "#325682",
         darkGrey: "#202020",
       },
-      fontFamily: {
-        handwrite: ["var(--font-sriracha)"],
-      },
     },
   },
   plugins: [],
