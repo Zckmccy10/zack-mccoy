@@ -84,7 +84,7 @@ const Projects = () => {
         </ProjectCard>
         <ProjectCard
           title="Fantasy Football League Record Site"
-          image="/images/mffl/home-top.png"
+          image="/images/mffl/home-top-dark.png"
           link="fantasyfootballleague"
           tech={[
             {
