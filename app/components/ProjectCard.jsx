@@ -21,7 +21,7 @@ const ProjectCard = ({ title, image, tech, link, size, children }) => {
         <p className="hidden md:block text-sm lg:text-md xl:text-lg">
           {children}
         </p>
-        <div className=" gap-6 hidden lg:flex">
+        <div className="gap-8 hidden lg:flex">
           {tech &&
             tech.length > 0 &&
             tech.map((t, idx) => {

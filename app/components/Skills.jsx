@@ -11,11 +11,13 @@ const Skills = () => {
           <TechCard title="HTML" image="html" />
           <TechCard title="CSS" image="css" />
           <TechCard title="Javascript" image="javascript" />
+          <TechCard title="Typescript" image="typescript" />
           <TechCard title="Next.js" image="nextjs" />
           <TechCard title="React" image="react" />
           <TechCard title="Redux" image="redux" />
           <TechCard title="NodeJS" image="nodejs" />
           <TechCard title="Socket IO" image="socketio" />
+          <TechCard title="Sanity CMS" image="sanity" />
           <TechCard title="Tailwind CSS" image="tailwind" />
           <TechCard title="Figma" image="figma" />
         </div>

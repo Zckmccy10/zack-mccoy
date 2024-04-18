@@ -8,9 +8,12 @@ export default function Home() {
     <div className="container mx-auto pt-8 gap-4">
       <div className="flex flex-col gap-4 px-8 lg:px-4">
         <BackButton />
-        <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
-          Project: Steelers Club Of Memphis
-        </h2>
+
+        <div className="py-6">
+          <h2 className="font-bold text-4xl text-transparent pb-4 bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
+            Steelers Club of Memphis
+          </h2>
+        </div>
         <div className="flex flex-wrap gap-8">
           <TechCard title="Next.js" image="nextjs" />
           <TechCard title="Tailwind CSS" image="tailwind" />

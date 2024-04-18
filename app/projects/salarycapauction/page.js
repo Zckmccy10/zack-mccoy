@@ -5,12 +5,21 @@ import PictureCarousel from "../components/PictureCarousel";
 
 export default function Home() {
   return (
-    <div className="container mx-auto pt-8 gap-4">
+    <div className="container mx-auto py-8 gap-4">
       <div className="flex flex-col gap-4 px-8 lg:px-4">
         <BackButton />
-        <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
-          Project: Salary Cap Auction
-        </h2>
+        <div className="py-6">
+          <h2 className="font-bold text-4xl text-transparent pb-4 bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
+            Salary Cap Auction
+          </h2>
+          <a
+            href="https://salarycapauction.com"
+            target="_blank"
+            className="text-xl hover:text-[#325682]"
+          >
+            https://salarycapauction.com
+          </a>
+        </div>
         <div className="flex flex-wrap gap-8">
           <TechCard title="Next.js" image="nextjs" />
           <TechCard title="Supabase" image="supabase" />
@@ -34,6 +43,7 @@ export default function Home() {
           system more consistent while implementing branding colors into the
           site.
         </p>
+
         <PictureCarousel
           images={[
             "/images/salarycapauction/homepage.png",
@@ -44,20 +54,20 @@ export default function Home() {
             "/images/salarycapauction/auction-analytics.png",
           ]}
         />
-      </div>
-      <h5 className="w-full my-10 font-bold opacity-80">
-        Tech Used In Previous Iterations:
-      </h5>
-      <div className="flex flex-wrap gap-8">
-        <TechCard title="HTML" image="html" />
-        <TechCard title="CSS" image="css" />
-        <TechCard title="Javascript" image="javascript" />
-        <TechCard title="Bootstrap" image="bootstrap" />
-        <TechCard title="NodeJS" image="nodejs" />
-        <TechCard title="Socket IO" image="socketio" />
-        <TechCard title="MongoDB" image="mongodb" />
-        <TechCard title="React" image="react" />
-        <TechCard title="Redux" image="redux" />
+        <h5 className="w-full my-10 font-bold opacity-80">
+          Tech Used In Previous Iterations:
+        </h5>
+        <div className="flex flex-wrap gap-8">
+          <TechCard title="HTML" image="html" />
+          <TechCard title="CSS" image="css" />
+          <TechCard title="Javascript" image="javascript" />
+          <TechCard title="Bootstrap" image="bootstrap" />
+          <TechCard title="NodeJS" image="nodejs" />
+          <TechCard title="Socket IO" image="socketio" />
+          <TechCard title="MongoDB" image="mongodb" />
+          <TechCard title="React" image="react" />
+          <TechCard title="Redux" image="redux" />
+        </div>
       </div>
     </div>
   );

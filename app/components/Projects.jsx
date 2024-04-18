@@ -92,12 +92,12 @@ const Projects = () => {
               url: "nextjs",
             },
             {
-              name: "Supabase",
-              url: "supabase",
+              name: "Sanity CMS",
+              url: "sanity",
             },
             {
-              name: "Redux",
-              url: "redux",
+              name: "Typescript",
+              url: "typescript",
             },
             {
               name: "Chakra UI",
@@ -128,10 +128,10 @@ const Projects = () => {
           ]}
           size="sm"
         >
-          Got an itch to try and design something, so I decided to see if I
-          could make a decent magazine. Fantasy football seems to be my usual
-          outlet for my creative endeavours, therefore I created a magazine to
-          recap the most recent year of our league!
+          Wanted to try and design something non-web related, so I decided to
+          see if I could make a decent magazine. Fantasy football seems to be my
+          usual outlet for my creative endeavours, therefore I created a
+          magazine to recap the most recent year of our league!
         </ProjectCard>
       </div>
     </div>

@@ -8,9 +8,19 @@ export default function Home() {
     <div className="container mx-auto pt-8 gap-4">
       <div className="flex flex-col gap-4 px-8 lg:px-4">
         <BackButton />
-        <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
-          Project: Southwind Golf League
-        </h2>
+        <div className="py-6">
+          <h2 className="font-bold text-4xl text-transparent pb-4 bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
+            Southwind Golf League
+          </h2>
+          <a
+            href="https://southwind-golf-league.vercel.app/"
+            target="_blank"
+            className="text-xl hover:text-[#325682]"
+          >
+            https://southwind-golf-league.vercel.app/
+          </a>
+        </div>
+
         <div className="flex flex-wrap gap-8">
           <TechCard title="Next.js" image="nextjs" />
           <TechCard title="Supabase" image="supabase" />

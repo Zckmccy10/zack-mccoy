@@ -16,11 +16,11 @@ export default function Home() {
           <TechCard title="Photoshop" image="photoshop" />
         </div>
         <p className="text-md lg:text-lg">
-          Got an itch to try and design something, so I decided to see if I
-          could make a decent magazine. Fantasy football seems to be my usual
-          outlet for my creative endeavours, therefore I created a magazine to
-          recap the most recent year of our league! We even printed these off
-          and presented them at our annual auction!
+          Wanted to try and design something non-web related, so I decided to
+          see if I could make a decent magazine. Fantasy football seems to be my
+          usual outlet for my creative endeavours, therefore I created a
+          magazine to recap the most recent year of our league! We even printed
+          these off and presented them at our annual fantasy football auction!
         </p>
         <p className="text-md lg:text-lg">
           Being in a fantasy football league that has been around since 1994, it

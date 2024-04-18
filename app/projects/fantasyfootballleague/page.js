@@ -5,16 +5,26 @@ import PictureCarousel from "../components/PictureCarousel";
 
 export default function Home() {
   return (
-    <div className="container mx-auto pt-8 gap-4">
+    <div className="container mx-auto py-8 gap-4">
       <div className="flex flex-col gap-4 px-8 lg:px-4">
         <BackButton />
-        <h2 className="font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
-          Project: Fantasy Football League Record
-        </h2>
+
+        <div className="py-6">
+          <h2 className="font-bold text-4xl text-transparent pb-4 bg-clip-text bg-gradient-to-r from-[#325682] via-[#325682] to-white to-50%">
+            Fantasy Football League Record
+          </h2>
+          <a
+            href="https://memffl.com"
+            target="_blank"
+            className="text-xl hover:text-[#325682]"
+          >
+            https://memffl.com
+          </a>
+        </div>
         <div className="flex flex-wrap gap-8">
           <TechCard title="Next.js" image="nextjs" />
-          <TechCard title="Supabase" image="supabase" />
-          <TechCard title="Redux" image="redux" />
+          <TechCard title="Sanity CMS" image="sanity" />
+          <TechCard title="Typescript" image="typescript" />
           <TechCard title="Chakra UI" image="chakraui" />
         </div>
         <p className="text-md lg:text-lg">
@@ -34,14 +44,25 @@ export default function Home() {
 
         <PictureCarousel
           images={[
-            "/images/mffl/home-top.png",
-            "/images/mffl/home-bottom.png",
-            "/images/mffl/team-purple-cobras.png",
-            "/images/mffl/team-black-mamba.png",
-            "/images/mffl/recaps-top.png",
-            "/images/mffl/recaps-bottom.png",
+            "/images/mffl/home-top-dark.png",
+            "/images/mffl/home-bottom-dark.png",
+            "/images/mffl/team-purple-cobras-dark.png",
+            "/images/mffl/team-black-mambas-dark.png",
+            "/images/mffl/recap-dark.png",
+            "/images/mffl/home-top-light.png",
+            "/images/mffl/home-bottom-light.png",
+            "/images/mffl/team-purple-cobras-light.png",
+            "/images/mffl/team-black-mambas-light.png",
+            "/images/mffl/recap-light.png",
           ]}
         />
+        <h5 className="w-full my-10 font-bold opacity-80">
+          Tech Used In Previous Iterations:
+        </h5>
+        <div className="flex flex-wrap gap-8">
+          <TechCard title="Supabase" image="supabase" />
+          <TechCard title="Redux" image="redux" />
+        </div>
       </div>
     </div>
   );
